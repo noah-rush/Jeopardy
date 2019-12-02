@@ -1,0 +1,17 @@
+{
+  "name": "jeopardy",
+  "version": "1.0.0",
+  "description": "Jeopardy app",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.13"
+  }
+}
