@@ -7,7 +7,7 @@ var Schema = mongoose.Schema;
 // This is similar to a Sequelize model
 var QuestionSchema = new Schema({
   // `title` must be of type String
-  question:{ type: String, index: { unique: true }},
+  question:String,
   answer:String,
   value:String
 });
