@@ -1,4 +1,6 @@
 // const NBA = require("nba");
+require('dotenv').config(); // Allows use of environmental variables from the .env file
+
 const mongoose = require('mongoose');
 const moment = require('moment');
 const axios = require('axios')
@@ -6,8 +8,9 @@ const cheerio = require('cheerio')
 const inquirer = require('inquirer');
 
 // var db = require("./models");
+const uri =  process.env.MONGODB_URI;
 
-mongoose.connect('mongodb://localhost/jeopardy');
+mongoose.connect(uri);
 var doubleJeopardyFlag = false;
 var db = require("./models");
 var categories = [];
